@@ -54,7 +54,7 @@ int main() {
     }
 
     printf("Enter your password: ");
-    gets(password);  // BOF 취약점
+    gets(password);  // BOF
 
     for (int i = 0; i < sizeof(logins) / sizeof(logins[0]); i++) {
         if (strcmp(username, logins[i][0]) == 0) {
